@@ -24,7 +24,30 @@
     </p> <!-- la parte de que envuelve span va a estar colorada de color verde usando css -->
     <a trget = "blank" href="https://www.google.com.mx/"> Ir a Google </a> <!-- etiqueta de hipervínculo nos ayuda a navegar entre páginas webs o dentro de nuetra misma página-->
     <!-- en la parte de href tenemos que poner el vínculo o ruta --> <!-- target = "blank" hace que cuando clickemos el link lo abramos en una página nueva-->
-    <img src ="paisaje.jpg"/> <!-- etiqueta img esta autocintenida --> <!-- src = "x" deonde x es la ruta o nombre d la imagen--> <!-- para este ejemplo se usa la imagen subida -->
+    <img src ="paisaje.jpg" width="400" height="500"/> <!-- etiqueta img esta autocintenida --> <!-- src = "x" deonde x es la ruta o nombre d la imagen--> <!-- para este ejemplo se usa la imagen subida -->
+    <!-- width y height modifican la imagen -->
+    <form action = "/formulario" method="GET"> <!-- etiqueta de form para recopilar información mediante etiquetas de ipo input -->
+      <!-- propiedad de action, tienen que contener una ruta de nuestro servidor o de otra aplicación o web-->
+      <!-- propiedad de method, tiene dosvalores GET y POST. Get: enviará los valores dentro de los campos atravé de la URL, POST: Los datos no aparecen en la URL -->
+      <!-- etiqueta de form para recopilar información mediante etiquetas de ipo input -->
+      
+      <label for = "nombre"> Nombre: </label>  <!-- el label for si lo clickea lo dirige al input con identificador nombre -->
+      <input type= "text" id="nombre" name="nombreUsuario" placeholder="Nombre"/>  <!-- el id de este input es nombre --> 
+      <!-- la propiedad name (objeto llave valor) nos ayuda a asignarle el nombre de la llave al que se enviaran los datos recopilados si es que está conecatada a una base de datos -->
+      <!-- la propiedad placeholder muestra un texto medio transparente en la casilla donde se ingresa texto, le ayuda al usuario a saber que poner  -->
+      <!-- la porpiedad de type tiene por defecto el de text y existen varios : text, radio, checkbox, file, email, password, submit-->
+      <br>
+      <label for = "apellidoPat"> Apellido paterno: </label>  
+      <input type= "text" id="apellidoPat" name="apellidoUsuarioPat" placeholder="Apellido paterno"/>
+      <br>
+      <label for = "apellidoMat"> Apellido paterno: </label>  
+      <input type= "text" id="apellidoMat" name="apellidoUsuarioMat" placeholder="Apellido materno"/>
+      <br>
+      <label for = "comentario"> Comentario: </label>
+      <textarea rows="18" cols="50" id="comentario" placeholder="Ingrese comentario" name="comment"></textarea> <!-- rows es fila, cols columnas, así puedo modificar ele spacio de texto -->
+      <br>
+      <input type = "submit" /> <!-- botón Submit que cuando se seleccione va a enviar todos los datos o valores de los campos del formularo a nuestro servidor -->
+    </form>
   </body>
 </html>
 
