@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title> El título de la página Web </title>
+  </head>
+  <!-- Podemos ver como el bloque de head que incluye un título -->
+  <body>
+    <h1> Un header de mi página Web </h1>
+    <p> Un párrafo de mi página Web </p>
+  </body>
+  <!-- Podemos ver como el bloque de body que incluye un header y un párrafo -->
+</html>
+
+<!-- esto es un comenario en formato HTML -->
